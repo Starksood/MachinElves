@@ -1,8 +1,8 @@
 streamlit
-# Force strict compatibility for Python 3.10
+# The bridge version: Supports old pickle files, fixes recursion bugs
+scikit-learn==1.1.3
+# Compatible dependencies
 numpy==1.23.5
 pandas==1.5.3
-scikit-learn==1.0.2
-joblib
-# Use CPU version to save space and avoid GPU conflicts
+joblib>=1.2.0
 tensorflow-cpu==2.11.0
