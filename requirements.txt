@@ -1,6 +1,8 @@
 streamlit
-tensorflow
+# We pin TF to 2.12 to be compatible with older Numpy
+tensorflow==2.12.0
 pandas
-numpy
+# Crucial: Scikit-learn 1.0.2 crashes with Numpy 1.24+
+numpy<1.24
 joblib
 scikit-learn==1.0.2
