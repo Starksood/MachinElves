@@ -1,5 +1,8 @@
 import os
 
+import sys
+sys.setrecursionlimit(2000) # Increase memory limit for loading the pickle file
+
 # --- MAC OS & STREAMLIT CRASH FIX ---
 # These MUST go before any other imports!
 os.environ['OMP_NUM_THREADS'] = '1'
